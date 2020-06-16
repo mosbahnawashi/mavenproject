@@ -1,0 +1,94 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>qaclickacademy</groupId>
+	<artifactId>mavenproject</artifactId>
+	<packaging>jar</packaging>
+	<version>1.0-SNAPSHOT</version>
+	<name>mavenproject</name>
+	<url>http://maven.apache.org</url>
+	
+	<profiles>
+	<profile>
+	<id>Regression</id>
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>3.0.0-M4</version>
+
+					<configuration>
+						<suiteXmlFiles>
+							<suiteXmlFile>testng2.xml</suiteXmlFile>
+						</suiteXmlFiles>
+					</configuration>
+
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+	</profile>
+	
+	<profile>
+	<id>Smoke</id>
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>3.0.0-M4</version>
+
+					<configuration>
+						<suiteXmlFiles>
+							<suiteXmlFile>testng.xml</suiteXmlFile>
+						</suiteXmlFiles>
+					</configuration>
+
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+	</profile>
+	
+	</profiles>
+	
+	<!-- 
+	Running a Single Test 
+	mvn -Dtest=AppuimTest test
+	 -->
+
+
+	<dependencies>
+
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.141.59</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.1.0</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+	<!-- If you use JDK version 8 or later. Add the following two lines of code 
+		for properties to solve this error: [ERROR] Source option 5 is no longer 
+		supported. Use 7 or later. [ERROR] Target option 5 is no longer supported. 
+		Use 7 or later. -->
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+</project>

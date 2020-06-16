@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-04-14T01:14:12 PDT" name="Suite" finished-at="2020-04-14T01:14:12 PDT" duration-ms="47">
+    <groups>
+    </groups>
+    <test started-at="2020-04-14T01:14:12 PDT" name="Test" finished-at="2020-04-14T01:14:12 PDT" duration-ms="47">
+      <class name="qaclickacademy.TestSelenium">
+        <test-method signature="browserAutomation()[pri:0, instance:qaclickacademy.TestSelenium@18a70f16]" started-at="2020-04-14T01:14:12 PDT" name="browserAutomation" finished-at="2020-04-14T01:14:12 PDT" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserAutomation -->
+        <test-method signature="webelementsUi()[pri:0, instance:qaclickacademy.TestSelenium@18a70f16]" started-at="2020-04-14T01:14:12 PDT" name="webelementsUi" finished-at="2020-04-14T01:14:12 PDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webelementsUi -->
+      </class> <!-- qaclickacademy.TestSelenium -->
+      <class name="qaclickacademy.RestAPITest">
+        <test-method signature="restAPITestcase1()[pri:0, instance:qaclickacademy.RestAPITest@62e136d3]" started-at="2020-04-14T01:14:12 PDT" name="restAPITestcase1" finished-at="2020-04-14T01:14:12 PDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- restAPITestcase1 -->
+        <test-method signature="restAPITestcase2()[pri:0, instance:qaclickacademy.RestAPITest@62e136d3]" started-at="2020-04-14T01:14:12 PDT" name="restAPITestcase2" finished-at="2020-04-14T01:14:12 PDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- restAPITestcase2 -->
+      </class> <!-- qaclickacademy.RestAPITest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
